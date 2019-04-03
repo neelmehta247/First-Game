@@ -2,8 +2,11 @@
 
 public class EndTrigger : MonoBehaviour
 {
+
+    public GameManager gameManager;
+    
     private void OnTriggerEnter(Collider other)
     {
-        throw new System.NotImplementedException();
+        gameManager.CompleteLevel();
     }
 }
